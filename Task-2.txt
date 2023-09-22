@@ -1,0 +1,51 @@
+1. Write a blog on the difference between document & window objects.
+
+Title: Understanding the Difference Between Document and Window Objects in JavaScript
+
+Introduction
+
+When working with JavaScript, it's crucial to have a clear understanding of the Document and Window objects, as they play pivotal roles in web development. These two objects are part of the Document Object Model (DOM) and are essential for manipulating web pages dynamically. In this blog, we will explore the differences between the Document and Window objects, their properties, and how they relate to one another.
+
+Document Object
+The Document object represents the entire HTML document within a web page. It serves as the entry point to access and manipulate the content, structure, and style of the page. Some key points about the Document object include:
+
+1. Structure of the DOM
+The Document object represents the root of the DOM tree. It contains all the elements, text, and attributes within the HTML document. You can access various parts of the document, such as the HTML element, head, body, and specific elements within the document.
+
+2. Methods and Properties
+The Document object provides methods and properties to interact with and modify the document's content. For example, you can use getElementById(), querySelector(), and querySelectorAll() methods to select and manipulate elements on the page. Additionally, properties like title, URL, and referrer are accessible through the Document object.
+
+3. Event Handling
+You can attach event listeners to the Document object to respond to user interactions or changes in the document. This enables you to create dynamic and interactive web pages.
+
+4. Limited Global Scope
+The Document object is limited to the specific HTML document it represents. It doesn't have access to external documents or resources. This limitation helps maintain security and prevents unauthorized access to external data.
+
+Window Object
+The Window object represents the browser window or tab in which the web page is loaded. It is a global object that provides access to various aspects of the browser environment. Here are some key aspects of the Window object:
+
+1. Global Scope
+Unlike the Document object, the Window object is global, meaning it is accessible throughout your JavaScript code without the need to reference it explicitly. This global scope allows you to interact with the browser environment and control the entire page.
+
+2. Browser Properties
+The Window object provides access to properties like innerWidth, innerHeight, and location. These properties allow you to retrieve information about the browser window, control its size, and navigate to different URLs.
+
+3. Timers and Events
+You can use the Window object to create timers with functions like setTimeout() and setInterval(). Additionally, you can attach event listeners for browser events like resize, scroll, and unload.
+
+4. Window Methods
+The Window object also offers various methods, such as alert(), confirm(), and prompt(), which allow you to interact with the user and display dialogs. These methods can enhance the user experience by providing feedback and requesting input.
+
+Relationship Between Document and Window
+To understand the relationship between the Document and Window objects, consider that the Document object is a property of the Window object. You can access the Document object using the document property of the Window object. For example:
+
+javascript
+Copy code
+const myDocument = window.document;
+This relationship allows you to interact with the Document object within the broader context of the Window object. You can access and manipulate the document's content while also controlling the browser window itself.
+
+Conclusion
+
+In summary, the Document and Window objects are fundamental components of the DOM in JavaScript. The Document object represents the content and structure of the HTML document, while the Window object represents the browser window and provides access to browser-specific properties and methods. Understanding the differences between these objects is essential for creating dynamic and interactive web pages.
+
+As you delve deeper into web development with JavaScript, mastering the use of these objects will enable you to build powerful and responsive web applications that provide a seamless user experience
