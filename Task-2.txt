@@ -39,9 +39,7 @@ The Window object also offers various methods, such as alert(), confirm(), and p
 Relationship Between Document and Window
 To understand the relationship between the Document and Window objects, consider that the Document object is a property of the Window object. You can access the Document object using the document property of the Window object. For example:
 
-javascript
-Copy code
-const myDocument = window.document;
+
 This relationship allows you to interact with the Document object within the broader context of the Window object. You can access and manipulate the document's content while also controlling the browser window itself.
 
 Conclusion
